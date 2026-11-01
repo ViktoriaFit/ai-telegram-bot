@@ -1,57 +1,21 @@
-# ai-telegram-bot
-Telegram bot with AI (Groq API) and memory
-# 🤖 AI Telegram Bot
+﻿
+# AI Telegram Bot
 
-Telegram-бот с искусственным интеллектом (Groq API) и постоянной памятью.
+## Overview
+An AI-powered Telegram bot built with Python. It uses the Groq API to generate intelligent responses, stores conversation memory in JSON, and supports role-based behavior (e.g., teacher, programmer).
 
-## ✨ Возможности
+## Features
+- **AI Responses:** Uses Groq API for fast and smart replies.
+- **Persistent Memory:** Stores conversation history in JSON files.
+- **Role-Based Behavior:** The bot can act as a teacher, programmer, or other roles.
+- **Statistics & History:** Tracks usage statistics and dialog history.
+- **Export:** Allows exporting the chat history.
 
-- 💬 **AI-ответы** — через Groq API (`openai/gpt-oss-20b`)
-- 🧠 **Постоянная память** — история диалога сохраняется в JSON
-- 🎭 **Роли** — `/role учитель`, `/role программист` и т.д.
-- 📊 **Статистика** — `/stats`
-- 📜 **История** — `/history`
-- 📝 **Резюме** — `/summary` (AI пересказывает диалог)
-- 💾 **Экспорт** — `/export` (скачать всю историю)
-- ⚙️ **Настройки** — `/settings`, `/set_temp`, `/set_tokens`
-- 🗑️ **Очистка** — `/clear`
-- 🔘 **Кнопки** — удобное меню
+## Tech Stack
+- **Language:** Python
+- **Bot Framework:** pyTelegramBotAPI
+- **AI:** Groq API
+- **Storage:** JSON (local files)
 
-## 🛠 Технологии
-
-- **Python 3.12**
-- **pyTelegramBotAPI** — Telegram Bot API
-- **requests** — HTTP-запросы к Groq
-- **JSON** — хранение истории и настроек
-- **VPN + прокси** — обход блокировок
-
-## 🚀 Как запустить
-
-1. Установите Python 3.12+
-2. Установите зависимости:
-3. Получите токен бота у `@BotFather` в Telegram
-4. Получите API-ключ Groq на `console.groq.com`
-5. Откройте `ai_bot.py` — замените:
-- `ВАШ_ТОКЕН` → ваш токен
-- `gsk_ваш-ключ` → ваш ключ Groq
-6. Запустите:
-   
-## 📖 Команды
-
-| Команда | Что делает |
-|---|---|
-| `/start` | Запустить бота |
-| `/help` | Все команды |
-| `/role [роль]` | Задать роль |
-| `/stats` | Статистика |
-| `/history` | Последние сообщения |
-| `/summary` | Резюме диалога |
-| `/export` | Скачать историю |
-| `/settings` | Настройки |
-| `/set_temp 0.7` | Креативность (0–1) |
-| `/set_tokens 500` | Длина ответа |
-| `/clear` | Очистить историю |
-
-## 📄 Лицензия
-
-MIT — свободное использование.
+## Author
+**Viktoria Zykova** – [GitHub](https://github.com/ViktoriaFit)
